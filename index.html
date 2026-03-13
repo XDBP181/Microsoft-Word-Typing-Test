@@ -582,7 +582,7 @@ input[type=range].zoom::-webkit-slider-thumb {
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" style="margin-right:3px"><circle cx="6" cy="6" r="5"/><path d="M4 6 L5.5 7.5 L8 4.5"/></svg>
     Spelling and Grammar Check
   </div>
-  <div class="st">English (United States)</div>
+  <div class="st">English (United Kingdom)</div>
   <div class="st-right">
     <div class="st" id="st-wpm">WPM: —</div>
     <div class="st" id="st-acc">Acc: —</div>
@@ -771,6 +771,140 @@ const THEMES = [
         <div class="memo-row"><span class="memo-key">Re:</span><span class="memo-val">Updated Hybrid Working Policy — Effective Immediately</span></div>
       </div><hr class="doc-divider">`,
     passage: "Following an extended period of consultation with staff representatives, trade union colleagues, and senior leadership, we are pleased to share the updated hybrid working policy which comes into effect immediately and supersedes all previous guidance issued on this subject. The new policy entitles all permanent employees to work remotely for up to three days per week, with a minimum of two days spent in the office, subject to the operational requirements of their team and the discretion of their line manager. We recognise that individual circumstances vary considerably and the policy is designed to be applied with common sense and proportionality rather than enforced rigidly in a way that does not serve the interests of either the organisation or its people. Managers are asked to hold a brief conversation with each member of their team within the next fortnight to agree a working pattern that reflects both individual preferences and business needs, and to record the outcome in the HR system."
+  }
+,
+
+  // ── EASY ──
+  {
+    title: 'Note to Self — Monday Morning',
+    buildHeader: () => `
+      <div class="memo-header" style="line-height:1.9;margin-bottom:18px">
+        <div style="text-align:right;color:#555;margin-bottom:16px">${today}</div>
+        <div style="margin-bottom:12px;font-size:16px;font-weight:600">Note to Self</div>
+      </div>`,
+    passage: "Get up on time. Make the bed. Put the kettle on and let it boil while you wash your face and find a clean shirt. Eat a proper breakfast, not just a biscuit and a cup of tea on the way out the door. Leave the house by half past eight at the very latest. Be kind to the man at the bus stop. Do not check your phone on the bus. When you get to the desk, write down the three things you need to do today and do them in order. Do not start the second one until the first is done. Take a real break at lunch, away from the screen. Drink more water. At the end of the day, tidy the desk before you leave so that tomorrow morning feels like a fresh start rather than a mess you already made."
+  },
+  {
+    title: 'Shopping Notes — This Week',
+    buildHeader: () => `
+      <div class="memo-header" style="line-height:1.9;margin-bottom:18px">
+        <div style="text-align:right;color:#555;margin-bottom:16px">${today}</div>
+        <div style="margin-bottom:12px;font-size:16px;font-weight:600">Weekly Shop — Notes</div>
+      </div>`,
+    passage: "We are out of milk, bread, eggs, and butter so those need to come first. Pick up some cheese while you are at it, the hard kind that keeps well in the fridge. We need more tea bags and a new jar of coffee. Get some fresh fruit, whatever looks good, and a bag of apples for the week. Grab a few tins of soup for the days when no one feels like cooking. We are nearly out of washing-up liquid and there is no more loo roll so do not forget those. If the bakery is open, get a loaf of the seeded bread. Check if we need more olive oil before you go, as I think the bottle is almost empty. Try not to buy too many things we do not need just because they are on offer."
+  },
+  {
+    title: 'Dear Tom — Catch Up Note',
+    buildHeader: () => `
+      <div class="memo-header" style="line-height:1.9;margin-bottom:18px">
+        <div style="text-align:right;color:#555;margin-bottom:16px">8 Park Road, York<br>${today}</div>
+        <div style="margin-bottom:12px;font-size:16px">Dear Tom,</div>
+      </div>`,
+    passage: "Just a quick note to say hello and to check that you are all doing well up there. It has been too long since we last spoke and I keep meaning to ring but the weeks seem to fly by before I get round to it. We are all fine here. The kids are back at school and seem to be getting on well, which is a relief after last term. The dog had a bad week but is much better now and back to her old self, which is good news for everyone. Work is busy but I am not going to moan about that. I was thinking we could try to meet up some time next month if you have a free weekend. It would be nice to have a proper catch up over a meal rather than a rushed chat on the phone. Let me know what works for you and we will sort something out."
+  },
+  {
+    title: 'Sunday Walk — Field Notes',
+    buildHeader: () => `
+      <div class="memo-title" style="color:#2e5e1e;border-color:#4a8a2a">Sunday Walk — Field Notes</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key">Date:</span><span class="memo-val">${today}</span></div>
+        <div class="memo-row"><span class="memo-key">Route:</span><span class="memo-val">Village loop, approx. four miles</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "We set off just after nine while the air was still cold and the fields were wet with dew. The path out of the village runs past the old mill and then up a gentle slope to the top of the ridge where on a clear day you can see for miles in every direction. It was a grey sort of morning but not unpleasant, and there were very few other people about, which was nice. We saw a fox at the edge of the wood, just standing there looking at us, before it turned and slipped into the trees without any great hurry. The mud on the back path was bad and we both got our boots properly dirty, but that is what boots are for. We were home by midday, made a pot of soup, and felt very glad we had gone out rather than staying in watching television all morning."
+  },
+
+  // ── MEDIUM ──
+  {
+    title: 'Project Debrief — Spring Campaign',
+    buildHeader: () => `
+      <div class="memo-title">Project Debrief</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key">Project:</span><span class="memo-val">Spring Brand Campaign 2025</span></div>
+        <div class="memo-row"><span class="memo-key">Date:</span><span class="memo-val">${today}</span></div>
+        <div class="memo-row"><span class="memo-key">Author:</span><span class="memo-val">Marketing &amp; Creative Team</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "The spring campaign delivered results broadly in line with our initial projections, though performance varied considerably across channels and audience segments in ways that offer useful lessons for future planning. Paid social drove the highest volume of traffic to the landing page but converted at a lower rate than anticipated, suggesting that the creative assets were effective at generating interest without successfully communicating the core value proposition clearly enough to prompt action. Email performed well above expectations in terms of open and click-through rates, which we attribute largely to the improved segmentation work carried out in the weeks before launch. The outdoor placements in the four trial cities generated strong brand recall scores in the post-campaign research, though as expected we were unable to tie this directly to measurable commercial outcomes in the short term."
+  },
+  {
+    title: 'Book Club Notes — October Meeting',
+    buildHeader: () => `
+      <div class="memo-title" style="color:#3b2a1a;border-color:#7a5230">Book Club Notes</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key">Book:</span><span class="memo-val">The Remains of the Day — Kazuo Ishiguro</span></div>
+        <div class="memo-row"><span class="memo-key">Meeting:</span><span class="memo-val">October, notes written ${today}</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "The group was largely in agreement that this is one of the finest English novels of the past fifty years, though the discussion quickly became lively when we turned to the question of whether Stevens is a figure of tragedy or of quiet dignity, or whether those two readings are in fact the same thing approached from different angles. Several members found his emotional repression deeply frustrating to read, while others felt that Ishiguro presents it with such precision and such sympathy that frustration gives way to something closer to grief by the end. The novel's treatment of regret was the passage that generated the most discussion, particularly the scene in the car with Miss Kenton where Stevens comprehends, or half-comprehends, what his choices have cost him."
+  },
+  {
+    title: 'Flat Viewing Notes — Saturday',
+    buildHeader: () => `
+      <div class="memo-header" style="line-height:1.9;margin-bottom:18px">
+        <div style="text-align:right;color:#555;margin-bottom:16px">${today}</div>
+        <div style="margin-bottom:12px;font-size:16px;font-weight:600">Flat Viewings — Notes &amp; Impressions</div>
+      </div>`,
+    passage: "The first flat on Cavendish Road was smaller than the photos suggested, which is always a bad sign, and the bedroom looked directly onto the brick wall of the building next door with barely three feet of gap between the two. The kitchen had been recently renovated but in a rather cheap way that would become irritating to live with after a few months. Not worth a second viewing. The second flat on Marlborough Street was much more promising. The rooms were a good size, the light was excellent from about midday onwards, and the landlord seemed sensible and unhurried in a way that suggested he would not be difficult to deal with. The street is noisier than we would like but the double glazing appeared to do a reasonable job. We are going back to look at Marlborough Street again on Thursday."
+  },
+  {
+    title: 'Weekend Plans — Group Email',
+    buildHeader: () => `
+      <div class="memo-header" style="line-height:1.9;margin-bottom:18px">
+        <div style="text-align:right;color:#555;margin-bottom:16px">${today}</div>
+        <div style="margin-bottom:4px">Hi everyone,</div>
+      </div>`,
+    passage: "I wanted to get something in the diary before everyone disappears off for the half term so here is a rough plan for the weekend of the fourteenth. The idea is to hire a couple of large houses in the countryside, somewhere within two hours of London so nobody has to drive all day, and spend Saturday and Sunday properly catching up without anyone having to rush off. We are thinking around twenty people all in, so if you are keen please let me know by the end of this week so I can start looking at places with the right number of beds. Cost should be reasonable if we split it properly, probably somewhere between forty and sixty pounds a head for the two nights. Bring your own drinks and we will sort food communally. Partners and children are very welcome."
+  },
+
+  // ── HARD ──
+  {
+    title: 'Constitutional Law — Lecture Notes',
+    buildHeader: () => `
+      <div class="memo-title" style="color:#1a2e4a;border-color:#2e5080">Constitutional Law</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key">Module:</span><span class="memo-val">LW3042 — Constitutional and Administrative Law</span></div>
+        <div class="memo-row"><span class="memo-key">Notes:</span><span class="memo-val">Lecture 7, transcribed ${today}</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "The doctrine of parliamentary sovereignty, as articulated most influentially by Dicey in his Introduction to the Study of the Law of the Constitution, holds that Parliament possesses the right to make or unmake any law whatsoever, and that no person or body is recognised by English law as having the right to override or set aside the legislation of Parliament. This formulation, whilst analytically elegant, has attracted substantial criticism from constitutional theorists who argue that it fails to account adequately for the practical constraints on parliamentary action that arise from membership of supranational organisations, from constitutional conventions, and from the judiciary's increasingly assertive approach to statutory interpretation. The relationship between parliamentary sovereignty and the rule of law has become particularly contested in recent decades, with judgments such as Jackson v Attorney General suggesting that the courts are prepared to scrutinise the exercise of parliamentary and executive power with a rigour that Dicey's framework did not anticipate."
+  },
+  {
+    title: 'Clinical Research Summary',
+    buildHeader: () => `
+      <div class="memo-title">Clinical Research Summary</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key">Study:</span><span class="memo-val">Phase II Efficacy and Tolerability Assessment</span></div>
+        <div class="memo-row"><span class="memo-key">Prepared:</span><span class="memo-val">${today}</span></div>
+        <div class="memo-row"><span class="memo-key">Status:</span><span class="memo-val">Confidential — Internal Distribution Only</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "The phase two trial enrolled two hundred and forty-seven participants across six investigational sites, randomised in a two-to-one ratio to receive either the investigational compound at the proposed therapeutic dose or matched placebo over a twenty-four week treatment period. The primary endpoint of statistically significant improvement in the composite symptom severity score at week twelve was achieved, with the treatment group demonstrating a mean reduction of thirty-one per cent compared to eight per cent in the placebo cohort, a difference that reached statistical significance with a p-value of less than zero point zero one. Tolerability was broadly acceptable, with the most frequently reported treatment-emergent adverse events being transient gastrointestinal disturbance and mild headache, both of which resolved without intervention in the majority of cases and did not result in discontinuation."
+  },
+  {
+    title: 'Architecture Critique — Southwark Riverside',
+    buildHeader: () => `
+      <div class="memo-title" style="color:#2c2c2c;border-color:#888">Architecture &amp; Planning Review</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key">Subject:</span><span class="memo-val">Proposed Mixed-Use Development, Southwark Riverside</span></div>
+        <div class="memo-row"><span class="memo-key">Reviewer:</span><span class="memo-val">Urban Design Advisory Panel, ${today}</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "The proposed development presents an architectural language that oscillates uncomfortably between contextual deference and wilful self-assertion, never fully committing to either with sufficient conviction to make the resulting synthesis persuasive. The facade treatment on the principal elevation borrows its materiality from the Victorian warehouses that once characterised this stretch of the riverfront without demonstrating any genuine understanding of the structural and compositional logic that gave those buildings their coherence, producing instead a pastiche that neither satisfies historically informed observers nor offers the clarity and rigour that contemporary design at this scale demands. The massing strategy fares rather better, and the decision to step the building down towards the water's edge shows a sensitivity to the public realm that is commendably absent from much comparable riverside development elsewhere in the capital."
+  },
+  {
+    title: 'Philosophy Essay — Free Will',
+    buildHeader: () => `
+      <div class="memo-title" style="font-style:italic;color:#2c2c2c;border-color:#888">Free Will and Moral Responsibility</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key" style="width:110px">Module:</span><span class="memo-val">PH2210 — Metaphysics and Epistemology</span></div>
+        <div class="memo-row"><span class="memo-key" style="width:110px">Draft:</span><span class="memo-val">First draft, ${today}</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "The compatibilist position, defended in various forms by Hume, Mill, and more recently by Frankfurt and Dennett, holds that free will and determinism are not merely logically consistent but that a proper understanding of what we mean by freedom actually requires a deterministic backdrop against which genuinely voluntary action can be distinguished from compulsion, coercion, and mere reflex. The hard incompatibilist, by contrast, argues that if every mental event is the inevitable product of prior causes extending back beyond the agent's birth and beyond any possible sphere of self-determination, then the notion of genuine authorship over one's actions is incoherent and the practices of praise, blame, and punishment that we build upon it require thoroughgoing revision. Frankfurt's influential thought experiment involving alternative possibilities attempts to sever the link between moral responsibility and the ability to have done otherwise, but critics have argued persuasively that every variant of the case either fails to eliminate genuine alternatives or tacitly reintroduces the very causal structures it was designed to exclude."
+  },
+  {
+    title: 'Victorian Poetry — Critical Analysis',
+    buildHeader: () => `
+      <div class="memo-title" style="color:#3b2a1a;border-color:#7a5230">Victorian Poetry — Critical Analysis</div>
+      <div class="memo-header">
+        <div class="memo-row"><span class="memo-key" style="width:110px">Module:</span><span class="memo-val">EN2340 — Victorian Literature and Culture</span></div>
+        <div class="memo-row"><span class="memo-key" style="width:110px">Draft:</span><span class="memo-val">Second essay draft, ${today}</span></div>
+      </div><hr class="doc-divider">`,
+    passage: "Tennyson's In Memoriam A.H.H. occupies an unusual position in the Victorian literary landscape as a text that simultaneously enacts and interrogates the elegiac tradition it inherits, deploying the consolatory machinery of classical elegy while subjecting its own consolations to a sceptical pressure that neither the form nor the ideology of the period had previously been asked to bear. The poem's extraordinary length, its accumulation of lyrics rather than its progression towards resolution, enacts at the formal level the very resistance to closure that its speaker experiences at the psychological and theological level. The geological and evolutionary anxieties that surface throughout the poem have attracted considerable critical attention, and rightly so, but it would be reductive to read In Memoriam primarily as a document of Victorian crisis of faith rather than as a sustained meditation on the phenomenology of grief, which the poem represents with a fidelity and complexity that remains remarkable."
   }
 ];
 
